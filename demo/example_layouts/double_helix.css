@@ -1,0 +1,116 @@
+body {
+  --delay: 0.15s;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 150px;
+  height: 500px;
+  perspective: 2560px;
+}
+
+.helix {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform-origin: center center 0;
+  animation: revolve 2s reverse linear infinite;
+}
+
+.helix:after, .helix:before {
+  content: '';
+  border-radius: 50%;
+  background: black;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  animation: revolve 2s linear infinite;
+}
+
+.helix:after {
+  left: 0;
+  background: yellow;
+}
+
+.helix:before {
+  right:0;
+  background: orange;
+}
+
+
+.helix:nth-child(1), .helix:nth-child(1):after, .helix:nth-child(1):before {
+  animation-delay: var(--delay);
+}
+
+.helix:nth-child(2), .helix:nth-child(2):after, .helix:nth-child(2):before {
+  animation-delay: calc(2*var(--delay));
+}
+
+.helix:nth-child(3), .helix:nth-child(3):after, .helix:nth-child(3):before {
+  animation-delay: calc(3*var(--delay));
+}
+
+.helix:nth-child(4), .helix:nth-child(4):after, .helix:nth-child(4):before {
+  animation-delay: calc(4*var(--delay));
+}
+
+.helix:nth-child(5), .helix:nth-child(5):after, .helix:nth-child(5):before {
+  animation-delay: calc(5*var(--delay));
+}
+
+.helix:nth-child(6), .helix:nth-child(6):after, .helix:nth-child(6):before {
+  animation-delay: calc(6*var(--delay));
+}
+
+.helix:nth-child(7), .helix:nth-child(7):after, .helix:nth-child(7):before {
+  animation-delay: calc(7*var(--delay));
+}
+
+.helix:nth-child(8), .helix:nth-child(8):after, .helix:nth-child(8):before {
+  animation-delay: calc(8*var(--delay));
+}
+
+.helix:nth-child(9), .helix:nth-child(9):after, .helix:nth-child(9):before {
+  animation-delay: calc(9*var(--delay));
+}
+
+.helix:nth-child(10), .helix:nth-child(10):after, .helix:nth-child(10):before {
+  animation-delay: calc(10*var(--delay));
+}
+
+.helix:nth-child(11), .helix:nth-child(11):after, .helix:nth-child(11):before {
+  animation-delay: calc(11*var(--delay));
+}
+
+.helix:nth-child(12), .helix:nth-child(12):after, .helix:nth-child(12):before {
+  animation-delay: calc(12*var(--delay));
+}
+
+.helix:nth-child(13), .helix:nth-child(13):after, .helix:nth-child(13):before {
+  animation-delay: calc(13*var(--delay));
+}
+
+.helix:nth-child(14), .helix:nth-child(14):after, .helix:nth-child(14):before {
+  animation-delay: calc(14*var(--delay));
+}
+
+.helix:nth-child(15), .helix:nth-child(15):after, .helix:nth-child(15):before {
+  animation-delay: calc(15*var(--delay));
+}
+
+.helix:nth-child(16), .helix:nth-child(16):after, .helix:nth-child(16):before {
+  animation-delay: calc(16*var(--delay));
+}
+
+@keyframes revolve {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

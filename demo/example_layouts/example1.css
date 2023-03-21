@@ -1,0 +1,126 @@
+body {
+  /* background-color: #e0e4eb; */
+  background-color: #FFB533;
+  /* background-color: magenta; */
+  font-family: sans-serif;
+  /* background-image: url("images/robot.png"); */
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  border: ridge 5px lime;
+  box-shadow: 0 0 30px 20px yellow;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+
+.experiment-float {
+  float: left;
+  font-size: 2.2em;
+  color: blue;
+  width: 50%;
+  margin: 50px 10px 50px 10px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.experiment-info {
+  width: 60%;
+  height: 350px;
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 10px;
+  /* border: solid 1px green; */
+}
+
+.alien-container {
+  /* border: solid 1px green; */
+  display: inline-block;
+  width: 30%;
+  height: 350px;
+  vertical-align: top;
+  float: right;
+  position: relative;
+}
+
+.alien-body {
+  height: 200px;
+  width: 180px;
+  position: relative;
+  top: 15%;
+  margin: auto;
+  background-color: #0099ff;
+  border-radius: 40%;
+  border: solid 2px green;
+  box-shadow: 5px 7px 5px grey;
+}
+
+.alien-body:hover .eye {
+  background-color: red;
+}
+
+.alien-body:hover .pupil {
+  margin: auto;
+}
+
+.alien-body:hover .eye-container {
+  height: 60px;
+}
+
+.eye-container {
+    position: relative;
+    top: 35%;
+    display: flex;
+    height: 50px;
+}
+
+.eye {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  border: solid 2px green;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px inset red;
+}
+
+.pupil {
+  background-color: black;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+}
+
+.draft-element {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  font-size: 7em;
+  opacity: 0.3;
+  transform: rotate(0.9turn);
+}
+
+.instructions {
+  position: sticky;
+  bottom: 0;
+  margin: 10px;
+  margin-top: 60px;
+  border-top: solid 1px grey;
+}
+
+.instruction-notes {
+  display: inline-block;
+  width: 40%;
+  border: solid 1px grey;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+  background-color: white;
+  vertical-align: top;
+}

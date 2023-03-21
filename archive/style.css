@@ -1,0 +1,8 @@
+.code-snippet.language-markup {
+  width: 90%;
+  /* max-height: 100px; */
+  overflow: scroll;
+  padding: 0.1em;
+  text-shadow: none;
+  background-color: white;
+}
